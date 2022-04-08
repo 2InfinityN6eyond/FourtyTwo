@@ -6,7 +6,7 @@
 /*   By: hyunjpar <hyunjpar@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:18:17 by hyunjpar          #+#    #+#             */
-/*   Updated: 2022/03/26 16:18:45 by hyunjpar         ###   ########.fr       */
+/*   Updated: 2022/03/27 14:18:31 by hyunjpar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_strlen(const char *s)
 {
 	int	i;
-
+	int c = 0;
 	i = 0;
 	while (s[i])
 		i++;
