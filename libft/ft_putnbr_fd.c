@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_putnbr_fd_base(char	digit, long long	num, int	fd)
+static void	ft_putnbr_fd_base(char	digit, long long	num, int	fd)
 {
 	if (num >= 10)
 		ft_putnbr_fd_base(num % 10 + '0', num / 10, fd);

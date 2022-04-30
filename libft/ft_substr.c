@@ -24,7 +24,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	new_len = ft_strlen(s + start);
 	if (new_len < len)
 		len = new_len;
-	if (!(substr = (char *)malloc(sizeof(char) * (len + 1))))
+	substr = (char *)malloc(sizeof(char) * (len + 1));
+	if (!substr)
 		return (NULL);
 	ft_strlcpy(substr, s + start, len + 1);
 	return (substr);

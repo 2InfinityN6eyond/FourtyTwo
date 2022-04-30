@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daelee <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: hyunjpar <hyunjpar@42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/04 20:52:40 by daelee            #+#    #+#             */
-/*   Updated: 2020/04/09 17:58:42 by daelee           ###   ########.fr       */
+/*   Created: 2022/03/27 14:24:06 by hyunjpar          #+#    #+#             */
+/*   Updated: 2022/03/27 14:24:08 by hyunjpar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_getstart(const char *s1, const char *set)
+static int	ft_getstart(const char *s1, const char *set)
 {
 	size_t	len;
 	size_t	i;
@@ -28,7 +28,7 @@ int			ft_getstart(const char *s1, const char *set)
 	return (i);
 }
 
-int			ft_getend(const char *s1, const char *set)
+static int	ft_getend(const char *s1, const char *set)
 {
 	size_t	len;
 	size_t	i;
@@ -44,7 +44,7 @@ int			ft_getend(const char *s1, const char *set)
 	return (len - i);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		start;
 	int		end;
