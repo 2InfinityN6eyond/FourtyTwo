@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hyunjpar <hyunjpar@42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/30 18:26:07 by hyunjpar          #+#    #+#             */
-/*   Updated: 2022/04/30 18:26:10 by hyunjpar         ###   ########.fr       */
+/*   Created: 2022/04/30 16:48:37 by hyunjpar          #+#    #+#             */
+/*   Updated: 2022/04/30 16:54:32 by hyunjpar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+void ft_striteri(char *s, void (*f)(unsigned int, char*)) {
+	int	idx;
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-	size_t	src_len;
-	size_t	i;
-
-	i = 0;
-	src_len = ft_strlen(src);
-	if (dstsize == 0)
-		return (src_len);
-	while (src[i] != '\0' && i < (dstsize - 1))
-	{
-		dst[i] = src[i];
-		i++;
+	idx = 0;
+	while (s[idx]) {
+		f(idx, s + idx);
+		idx++;
 	}
-	dst[i] = '\0';
-	return (src_len);
 }
