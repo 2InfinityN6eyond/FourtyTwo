@@ -6,8 +6,18 @@
 /*   By: hyunjpar <hyunjpar@42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 16:41:30 by hyunjpar          #+#    #+#             */
-/*   Updated: 2022/04/30 16:41:33 by hyunjpar         ###   ########.fr       */
+/*   Updated: 2022/05/15 16:33:48 by hyunjpar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}

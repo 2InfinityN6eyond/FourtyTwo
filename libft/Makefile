@@ -20,7 +20,6 @@ RM = rm -f
 FILES = ft_memset \
 		ft_bzero \
 		ft_memcpy \
-		ft_memccpy \
 		ft_memmove \
 		ft_memchr \
 		ft_memcmp \
@@ -42,6 +41,7 @@ FILES = ft_memset \
 		ft_calloc \
 		ft_strdup \
 		ft_substr \
+		ft_striteri \
 		ft_strjoin \
 		ft_strtrim \
 		ft_split \
@@ -51,9 +51,7 @@ FILES = ft_memset \
 		ft_putstr_fd \
 		ft_putendl_fd \
 		ft_putnbr_fd \
-		ft_strtok \
-		ft_strcmp \
-		get_next_line \
+		ft_strcmp
 
 FILES_B = 	ft_lstnew \
 	  		ft_lstadd_front \
