@@ -6,13 +6,13 @@
 #    By: hyunjpar <hyunjpar@42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/30 16:15:07 by hyunjpar          #+#    #+#              #
-#    Updated: 2022/04/30 16:15:10 by hyunjpar         ###   ########.fr        #
+#    Updated: 2022/05/20 18:12:18 by hyunjpar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= libft.a
 
-CC		= gcc
+CC		= cc
 CFLAG	= -Wall -Wextra -Werror
 
 AR		= ar

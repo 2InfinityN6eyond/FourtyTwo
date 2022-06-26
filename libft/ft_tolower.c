@@ -6,13 +6,13 @@
 /*   By: hyunjpar <hyunjpar@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 19:20:00 by hyunjpar          #+#    #+#             */
-/*   Updated: 2022/03/26 19:20:32 by hyunjpar         ###   ########.fr       */
+/*   Updated: 2022/05/20 18:14:55 by hyunjpar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isupper(int c)
+static int	ft_isupper(int c)
 {
 	return (('A' <= c) && (c <= 'Z'));
 }

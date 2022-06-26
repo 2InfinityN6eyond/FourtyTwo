@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hyunjpar <hyunjpar@42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/20 18:08:32 by hyunjpar          #+#    #+#             */
-/*   Updated: 2022/05/20 18:10:32 by hyunjpar         ###   ########.fr       */
+/*   Created: 2022/06/26 16:38:15 by hyunjpar          #+#    #+#             */
+/*   Updated: 2022/06/26 16:38:18 by hyunjpar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# include <stdarg.h>
+# include <unistd.h>
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
-{
-	size_t	i;
+int	printf_char(int c);
+int	printf_str(char *str);
+int	printf_nbr(int nbr);
+int	printf_usdnbr(unsigned int u);
+int	printf_hexlower(unsigned int x);
+int	printf_hexupper(unsigned int x);
+int	printf_ptr(unsigned long long p);
 
-	i = 0;
-	while (i < n)
-	{
-		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
-		i++;
-	}
-	return (dst);
-}
+#endif
